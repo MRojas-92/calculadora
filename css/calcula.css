@@ -1,0 +1,152 @@
+* {
+	font-size: 1.1rem;
+}
+
+body{
+	margin: 10px;
+	background-image: url("../img/fondo.jpg");
+}
+
+h1{
+	text-align: center;
+	font-size: 2.5rem;
+	display: block;
+}
+
+h2{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+#cabecera {
+	background: #333333;
+	border: 1px solid #999999;
+	padding: 3px;
+	color: rgb(240, 240, 240);
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-bottom: 1%;
+	min-width: 770px;
+}
+
+section{
+    margin-bottom: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    float: left;
+    max-width: 700px;
+	min-width: 550px;
+}
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.calculadora { 
+	border: 2px #000 ridge; 
+	width: 100%;
+	text-align: center;
+    background-color: #A4A4A4; 
+}
+
+.cambiar {
+	margin-left: 15px;
+}
+
+#textoAnterior {
+	width: 84%; 
+	height: 164px;
+	text-align: right;
+	position: relative; 
+	left: 30px;  
+	font-family: "courier new";
+	overflow: hidden;
+	padding: 5px 5px;
+}
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { 
+	width: 84%; 
+	border: 2px black solid; 
+	text-align: right;
+    position: relative; 
+    left: 30px;  
+    padding: 5px 5px;
+    background-color: white; 
+    font-family: "courier new";
+    overflow: hidden;
+   	margin-bottom: 5px;
+}
+
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] { 
+	width: 75px;
+	height: 36px; 
+	padding: 0;
+}
+/*botones especiales*/
+.calculadora input.largo { 
+	color:#2f4eab; 
+	width: 120px; 
+}
+
+.calculadora input.ocultar { 
+	color: #2f4eab; 
+	width: 120px; 
+}
+
+.calculadora input.cambiar { 
+	color:#2f4eab; 
+	width: 125px; 
+	height: 35px;
+	font-size: 1.1rem;
+}
+
+.calculadora input{
+  box-shadow: 5px 4px 8px #646464;
+}
+
+.calculadora input:hover {
+    background-color: #000;
+  text-decoration: none;
+  color: white;
+}
+
+p{
+	margin: 7;
+}
+
+#menu{
+	text-align: center;
+	width: 25%;
+}
+
+footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: white;
+    background-color: #333;
+    clear: left;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/* ALINEACIONES */
+
+.conversion {
+    display: inline-flex;
+    justify-content: space-between;
+    float: left;
+    padding-left: 2.5em;
+}
+.estandar {
+    float: right;
+    padding-right: 2.5em;
+}
+.cientifica {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 1em;
+}
+
