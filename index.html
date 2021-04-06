@@ -1,0 +1,110 @@
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/calcula.css">
+	<link rel="shortcut icon" href="img/calculadora.ico">
+	<script type="text/javascript" src="js/calcula.js"></script>
+</head>
+<body>
+	<header id="cabecera">
+    	<h1>Calculadora - Equipo 9</h1>
+    </header>
+
+<section>
+	<div class="calculadora">
+		<form action="#" name="calculadora" id="calculadora">
+			<!--<input style="float: left;" type="button" class="cambiar" value="Estandar" onclick="ocultar('estandar')">-->
+			
+			<div id="titulo"><h2>Calculadora Cientifica</h2></div>
+
+			<p id="textoAnterior" style="height: 15px; text-align: right;"></p>
+			<p id="textoPantalla">0</p>
+			
+            <div class="conversion">
+                <p style="float: left; margin-left: 2%">
+                    <br><input type="button" class="ocultar" value="Binario" onclick="binario()">
+                    <br><input type="button" class="ocultar" value="Octal" onclick="octal()">
+                    <br><input type="button" class="ocultar" value="Hexadecimal" onclick="hexadecimal()">
+                </p>
+            </div>
+
+            <br>
+
+            <div class="estandar">
+                <p>
+                    <input type="button" class="largo" value="Retr" onclick="retro()">
+                    <input type="button" class="largo" value="CE" onclick="borradoParcial()">
+                    <input type="button" class="largo" value="C" onclick="borradoTotal()" >
+                </p>
+                <p>
+                    <input type="button" value="7" onclick="numero('7')">
+                    <input type="button" value="8" onclick="numero('8')">
+                    <input type="button" value="9" onclick="numero('9')">
+                    <input type="button" value="/" onclick="operar('/')">
+                    <input type="button" value="Raiz" onclick="raizc()">
+                </p>
+
+                <p>
+                    <input type="button" value="4" onclick="numero('4')">
+                    <input type="button" value="5" onclick="numero('5')">
+                    <input type="button" value="6" onclick="numero('6')">
+                    <input type="button" value="*" onclick="operar('*')">
+                    <input type="button" value="%" onclick="porcent()">
+                </p>
+                <p>
+                    <input type="button" value="1" onclick="numero('1')">
+                    <input type="button" value="2" onclick="numero('2')">
+                    <input type="button" value="3" onclick="numero('3')">
+                    <input id="operacion" type="button" value="-" onclick="operar('-')">
+                    <input type="button" value="1/x" onclick="inve()">
+                </p>
+                <p>
+                    <input type="button" value="0" onclick="numero('0')">
+                    <input type="button" value="+/-" onclick="opuest()">
+                    <input type="button" value="." onclick="numero('.')">
+                    <input type="button" value="+" onclick="operar('+')">
+                    <input type="button" value="=" onclick="igualar()">
+                </p>
+            </div>
+
+            <div id="cientifica" class="cientifica">
+                <p>
+                    <input type="button" value="sen" onclick="trigo('sen')">
+                    <input type="button" value="cos" onclick="trigo('cos')">
+                    <input type="button" value="tan" onclick="trigo('tan')">
+                    <input type="button" value="arc sen" onclick="trigo('arc sen')">
+                    <input type="button" value="arc cos" onclick="trigo('arc cos')">
+                    <input type="button" value="arc tan" onclick="trigo('arc tan')">
+                </p>
+            
+                <p>
+                    <input type="button" value="(" onclick="numero('(')">
+                    <input type="button" value=")" onclick="numero(')')">
+                    <input type="button" value="π" onclick="especial('pi')">
+                    <input type="button" value="e" onclick="especial('e')">
+                    <input type="button" value="|x|" onclick="absoluto()">
+                    <input type="button" value="n!" onclick="factorial()">
+                </p>
+    
+                <p>
+                    <input type="button" class="ocultar" id="radiante" value="Rad" onclick="radian()">
+                    <input type="button" class="ocultar" value="x^y" onclick="operar('^')">
+                    <input type="button" class="ocultar" value="log" onclick="logaritmo('10')">
+                    <input type="button" class="ocultar" value="ln" onclick="logaritmo('1')">
+                </p>
+<!--
+                <p id="columna" style="float: left; margin-left: 2%">
+                    <br><input type="button" class="ocultar" id="radiante" value="Rad" onclick="radian()">
+                    <br><input type="button" class="ocultar" value="x^y" onclick="operar('^')">
+                    <br><input type="button" class="ocultar" value="log" onclick="logaritmo('10')">
+                    <br><input type="button" class="ocultar" value="ln" onclick="logaritmo('1')">
+                </p> 
+-->                
+
+            </div>            
+		</form>
+	</div>
+</section>
+	<footer>Equipo 9 &copy; - Derechos Reservados</footer>
+</body>
+</html>
